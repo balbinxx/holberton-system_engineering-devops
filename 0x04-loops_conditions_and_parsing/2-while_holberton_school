@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Displays "Holberton School" 10x times using while
+x=1
+while [ $x -le 10 ]
+do
+    echo "Holberton School"
+    x=$(( x+1 ))
+done
