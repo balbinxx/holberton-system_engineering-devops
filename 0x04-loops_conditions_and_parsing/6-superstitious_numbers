@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Displays numbers from 1 to 20
+x=1
+tx1="bad luck from China"
+tx2="bad luck from Japan"
+tx3="bad luck from Italy"
+
+while [ $x -le 20 ]
+do
+    echo "$x"
+    case $x in
+        4)
+            echo "$tx1"
+            ;;
+        9)
+            echo "$tx2"
+            ;;
+        17)
+            echo "$tx3"
+            ;;
+    esac
+    ((x++))
+done
