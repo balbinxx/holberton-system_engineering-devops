@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Use ssh to connect a server using P.K.
+ssh -i ~/.ssh/holberton ubuntu@34.75.28.221
