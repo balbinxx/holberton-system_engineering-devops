@@ -17,7 +17,7 @@ if __name__ == "__main__":
     todos = requests.get(evt + argv[1] + "/todos/")
     for items in todos.json():
         tasks.append([items["userId"], user,
-                           items['completed'], items['title']])
+                     items['completed'], items['title']])
 
     with open(str(tasks[0][0]) + '.csv', 'w') as file:
         write = csv.writer(file, quoting=csv.QUOTE_ALL)
