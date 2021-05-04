@@ -8,7 +8,7 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    evt = 'https://jsonplaceholder.typicode.com/todos/'
+    evt = 'https://jsonplaceholder.typicode.com/users/'
     user = requests.get(evt + argv[1])
     employee = user.json()['name']
 
