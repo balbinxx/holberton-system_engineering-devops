@@ -1,7 +1,6 @@
 # Debugging four
 exec { 'ulimit':
     path     => ['/usr/bin'],
-    command  =>  'sed -i "s/15/2000/" /etc/default/nginx;
-                sudo service nginx restart',
+    command  => "sudo sed -i 's/ULIMIT=/#ULIMIT=/g' /etc/default/nginx; sudo service nginx restart",
     provider => 'shell',
 }
